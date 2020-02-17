@@ -1,0 +1,17 @@
+<!-- 1. Form with input where user can type a question to ask Coach -->
+<!-- 2. After submitting form => user redirected to another page where she/he will see her/his question and the coach answer -->
+
+<h1>Stupid Coaching</h1>
+
+<!-- action => holds the url of the request it triggers on submit -->
+<!-- method => holds the HTTP verb (get by default) -->
+<form action="/answer" method = "get">
+  <input type="text" name = "question">
+  <input type="submit" value = "Ask your coach anything." placeholder = "What is your question for coach?">
+</form>
+
+<!-- On submit: triggers the follow request
+GET /answer?question=something_you_typed -->
+<!-- Therefore, triggers 2 => page with user's question and coach's answer -->
+
+
